@@ -1,0 +1,16 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#node
+node_modules
+
+#VIM
+*.swp
+
+#PhpStore
+*.idea/*
+
+#SublimeText
+*.sublime-workspace
+*.sublime-project
