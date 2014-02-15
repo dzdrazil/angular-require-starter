@@ -27,3 +27,7 @@ The _src_ directory is where the build of our code will go.  By default, it will
  - **css** will be empty in the repository, as our build tasks will add the compiled .css files in development.  Ideally, these should only be checked into source control on a release branch.
  - **js** will be empty in the repository, and contain files minified by the build tasks in development.  Ideally, these files should only be checked into source control on a release branch.
  - **media** should contain images, videos, fonts and other media related assets.  These files are safe to commit to source control for most projects
+
+ ### Build Reports
+
+The grunt build tools are setup to generate build reports by default in a directory called 'build_reports' next to _src_ and _www_, but that is simply the default value in the Gruntfile.js configuration file.  This directory probably shouldn't be checked into source control, and it should be setup to whichever location makes sense based on the backend technology in use, so long as it is not inside of the _www_ folder in production.
