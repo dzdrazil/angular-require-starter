@@ -3,6 +3,30 @@ angular-require-starter
 
 Seed project for getting started with an AngularJS+RequireJS application. Demonstrates directory structure, routing and testing. Comes with some base classes + karma / phantomjs for unit testing.
 
+## TL:DR; install instructions
+
+ - install node
+ - npm install -g bower
+ - npm install -g karma
+ - npm install -g grunt-cli
+ - npm install
+ - bower install
+
+To recompile only the sass files
+ - grunt build:sass
+
+To recompile only the js files
+ - grunt build:js
+
+To build (dev)
+ - grunt build:dev
+
+To build (prod)
+ - grunt build
+
+To test
+ - grunt karma:unit
+
 
 ## Directory Structure
 
