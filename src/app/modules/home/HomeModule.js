@@ -9,12 +9,12 @@ define(/** @lends HomeModule */function(require) {
     'use strict';
 
     var ng = require('angular');
+    require('angular-route');
 
     /**
      * @requires HomeController
      */
     var homeControllerTemplate = require('text!./HomeControllerTemplate.html');
-    require('./HomeController');
 
     /**
      * @namespace {ng.Module} HomeModule

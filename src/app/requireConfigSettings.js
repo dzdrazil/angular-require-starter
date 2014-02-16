@@ -10,16 +10,18 @@ require.config({
 
     // shim settings for files that are not AMD compliant
     // this tells require.js how to handle non-modular files
-    angular: {
-        exports: 'angular'/*,
-        // only use jquery if you have an absolute need to do so
-        // don't forget to add it to bower and the paths config above
-        deps: ['jquery'] */
-    },
-    'angular-route': {
-        deps: ['angular']
-    },
-    'angular-bindonce': {
-        deps: ['angular']
-    },
+    shim: {
+        angular: {
+            exports: 'angular'/*,
+            // only use jquery if you have an absolute need to do so
+            // don't forget to add it to bower and the paths config above
+            deps: ['jquery'] */
+        },
+        'angular-route': {
+            deps: ['angular']
+        },
+        'angular-bindonce': {
+            deps: ['angular']
+        }
+    }
 });

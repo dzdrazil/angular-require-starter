@@ -18,25 +18,13 @@
     <!-- build:css assets/styles/screen.css -->
     <!-- bower:css -->
     <!-- endbower -->
-    <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
+    <link rel="stylesheet" media="screen, projection" href="css/screen.css" />
     <!-- endbuild -->
 </head>
 <body>
     <!-- CONTENT -->
-    <div class="site">
-        <div class="site-hd" role="banner">
-            <h1 class="brand">
-                <a href="//www.example.com">CLIENT.Project</a>
-            </h1>
-        </div> <!-- /site-hd -->
+    <div data-ng-view>
 
-        <div class="site-bd" role="main">
-
-        </div> <!-- /site-bd -->
-
-        <div class="site-ft" role="contentinfo">
-            <p><small>&copy;2014</small></p>
-        </div> <!-- /site-ft -->
     </div> <!-- /site -->
 
     <!-- JAVASCRIPT -->
@@ -101,7 +89,7 @@
          * @type String
          * @final
          */
-        SETTINGS.SCRIPT_PATH = 'assets/scripts/';
+        SETTINGS.SCRIPT_PATH = 'js/';
 
         /**
          * Set any RequireJs configuration that is dependent on dynamic
