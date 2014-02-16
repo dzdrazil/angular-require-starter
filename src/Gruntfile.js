@@ -109,6 +109,8 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        // static analysis reporting- code health metrics
         plato: {
             main: {
                 options: {
@@ -119,11 +121,13 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        // auto-generated documentation; especially useful for libraries and reusable components
         jsdoc : {
             dist : {
                 src: ['app/**/*.js'],
                 options: {
-                    destination: '../build-reports/jsdocs'
+                    destination: '../build-reports/jsdoc'
                 }
             }
         }
@@ -157,7 +161,7 @@ module.exports = function (grunt) {
         'uglify',
         'karma:unit',
         'plato',
-        'jsdocs',
+        'jsdoc',
         'build:sass',
         'build:js'
     ]);
