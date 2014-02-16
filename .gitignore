@@ -15,3 +15,6 @@ npm-debug.log
 #SublimeText
 *.sublime-workspace
 *.sublime-project
+
+# remove this line as soon as you move the files over to your own repo
+vendor
