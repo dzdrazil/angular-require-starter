@@ -16,5 +16,10 @@ npm-debug.log
 *.sublime-workspace
 *.sublime-project
 
+#compiled assets
+/build-reports
+/www/css
+/www/js
+
 # remove this line as soon as you move the files over to your own repo
 vendor

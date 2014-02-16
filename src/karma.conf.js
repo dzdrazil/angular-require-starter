@@ -14,11 +14,11 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'tests/karma-main.js',
-            'lib-thirdparty/angular/angular.js',
-            'lib-thirdparty/angular-mocks/angular-mocks.js',
             'app/requireConfigSettings.js',
-            {pattern: 'lib-thirdparty/**/*.js', included: false},
+            'tests/karma-main.js',
+            'vendor/angular/angular.js',
+            'vendor/angular-mocks/angular-mocks.js',
+            {pattern: 'vendor/**/*.js', included: false},
             {pattern: 'tests/**/*.js', included: false},
             {pattern: 'app/**/*.js', included: false},
             {pattern: 'app/**/*.html', included: false}
