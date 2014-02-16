@@ -24,8 +24,6 @@
     }
 })(this);
 
-require.config(REQUIRE_CONFIG);
-
 // karma settings
 require.config({
     // karma serves files from "base"

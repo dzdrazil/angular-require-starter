@@ -6,6 +6,8 @@ Seed project for getting started with an AngularJS+RequireJS application. Demons
 ## TL:DR; install instructions
 
  - install node
+ - install ruby (this and sass can be skipped if you remove sass from the grunt configuration as well)
+ - install sass (gem install sass)
  - npm install -g bower
  - npm install -g karma
  - npm install -g grunt-cli

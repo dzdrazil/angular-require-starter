@@ -4,10 +4,7 @@
  */
 define([
     'angular',
-    'app/Application',
-    // include module index files here
-    'app/modules/home/index'
-    //
+    'Application'
 ], function (ng) {
     'use strict';
 

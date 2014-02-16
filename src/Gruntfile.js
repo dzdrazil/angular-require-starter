@@ -10,11 +10,10 @@ module.exports = function (grunt) {
             dist: {
                 unixNewlines: true,
                 files: [{
-                    cwd: 'scss',
-                    src: ['*.scss'],
-                    dest: '../www/css',
+                    src: ['scss/*.scss'],
+                    dest: '../www/css/screen.css',
                     ext: '.css'
-              }]
+                }]
             }
         },
 
@@ -65,17 +64,18 @@ module.exports = function (grunt) {
             },
             dev: {
                 options: {
-                    baseUrl: './',
-                    name: 'app/bootstrap',
+                    baseUrl: 'app',
+                    name: 'bootstrap',
                     out: '../www/js/bootstrap.js',
+                    mainConfigFile: 'app/requireConfigSettings.js',
                     optimize: 'none'
                 }
             },
             compile: {
-                options: {//grunt.file.readJSON('buildMain.json')
+                options: {
                     // Note: all paths are relative to build.js
-                    baseUrl: './',
-                    name: 'app/bootstrap', // Input script (.js extension inferred)
+                    baseUrl: 'app',
+                    name: 'bootstrap', // Input script (.js extension inferred)
                     out: '../www/js/bootstrap.js', // Path for combined script output
 
                     //fileExclusionRegExp: /.svn/, // Ignore all files matching this pattern
@@ -88,7 +88,7 @@ module.exports = function (grunt) {
                     uglify: {
                         toplevel: false,
                         beautify: false,
-                        ascii_only: true
+                        'ascii_only': true
                     },
 
                     /**
@@ -104,7 +104,7 @@ module.exports = function (grunt) {
                     // annotate any angular files whose injection requirements can be inferred
                     // doesn't work if you pass in a name reference rather than an anonymous function
                     onBuildRead: function (moduleName, path, contents) {
-                       return require('ng-annotate')(contents, {add: true}).src;
+                        return require('ng-annotate')(contents, {add: true}).src;
                     }
                 }
             }
