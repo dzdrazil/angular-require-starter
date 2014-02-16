@@ -4,11 +4,10 @@
   "private": true,
   "_comments": {
     "optional but useful packages, or alternative versions": {
-
         "karma-complexity-preprocessor": "~0.1.0",
         "grunt-contrib-jshint": "~0.7.2",
         "grunt-css": "~0.5.4",
-        "karma-junit-reporter": "~0.2.1",
+        "karma-junit-reporter": "~0.2.1"
     }
   },
   "devDependencies": {
