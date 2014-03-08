@@ -3,7 +3,7 @@ define(function(require) {
 
     var ng = require('angular');
 
-    require('./modules/home/index');
+    require('./modules/home/HomeModule');
 
     ng.module('app', [
         'app.home'

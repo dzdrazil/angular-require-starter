@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                     mangle: false,
                 },
                 files: {
-                    '../www/js/require.js': 'vendor/requirejs/require.js'
+                    '../www/assets/scripts/require.js': 'vendor/requirejs/require.js'
                 }
             }
         },
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
                     // Note: all paths are relative to build.js
                     baseUrl: './',
                     name: 'app/requireConfigSettings', // Input script (.js extension inferred)
-                    out: '../www/js/requireConfigSettings.js', // Path for combined script output
+                    out: '../www/assets/requireConfigSettings.js', // Path for combined script output
 
                     // fileExclusionRegExp: /.svn/, // Ignore all files matching this pattern
                     //useStrict: true,
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
                 options: {
                     baseUrl: 'app',
                     name: 'bootstrap',
-                    out: '../www/js/bootstrap.js',
+                    out: '../www/assets/bootstrap.js',
                     mainConfigFile: 'app/requireConfigSettings.js',
                     optimize: 'none'
                 }
@@ -76,7 +76,7 @@ module.exports = function (grunt) {
                     // Note: all paths are relative to build.js
                     baseUrl: 'app',
                     name: 'bootstrap', // Input script (.js extension inferred)
-                    out: '../www/js/bootstrap.js', // Path for combined script output
+                    out: '../www/assets/bootstrap.js', // Path for combined script output
 
                     //fileExclusionRegExp: /.svn/, // Ignore all files matching this pattern
                     //useStrict: true,

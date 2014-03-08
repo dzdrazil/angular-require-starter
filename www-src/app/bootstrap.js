@@ -4,7 +4,7 @@
  */
 define([
     'angular',
-    'Application'
+    'modules/main/MainModule'
 ], function (ng) {
     'use strict';
 
