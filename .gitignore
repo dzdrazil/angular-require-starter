@@ -18,8 +18,8 @@ npm-debug.log
 
 #compiled assets
 /build-reports
-/www/css
-/www/js
+/www/assets/css
+/www/assets/js
 
 # remove this line as soon as you move the files over to your own repo
 vendor

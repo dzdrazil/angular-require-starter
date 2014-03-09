@@ -24,12 +24,14 @@
 <body>
     <!-- CONTENT -->
     <div data-ng-view>
-
+        <h1>this content should be replaced by ng-view</h1>
     </div> <!-- /site -->
 
     <!-- JAVASCRIPT -->
-    <script src="js/require.js"></script>
-    <script src="js/requireConfigSettings.js"></script>
+    <script src="assets/js/require.js"></script>
+    <script src="assets/js/requireConfig.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         /**
          * Global constants
@@ -89,26 +91,26 @@
          * @type String
          * @final
          */
-        SETTINGS.SCRIPT_PATH = 'js/';
+        //SETTINGS.SCRIPT_PATH = 'assets/js/';
 
         /**
          * Set any RequireJs configuration that is dependent on dynamic
          * configuration variables. Note that this config data is merged into
          * any other require.config() statements defined elsewhere.
          */
-        require.config({
-            // Script path
-            baseUrl: SETTINGS.SCRIPT_PATH,
+        // require.config({
+        //     // Script path
+        //   //  baseUrl: SETTINGS.SCRIPT_PATH,
 
-            // Params to append to the end of each js file request
-            urlArgs: 'v=' + SETTINGS.APP_VERSION + SETTINGS.CACHE_BUSTER
-        });
+        //     // Params to append to the end of each js file request
+        //     urlArgs: 'v=' + SETTINGS.APP_VERSION + SETTINGS.CACHE_BUSTER
+        // });
 
         /**
          * Set route and kick off RequireJs, which begins loading of scripts
          * starting from main.js.
          */
-        require(['bootstrap']);
+      //  require(['bootstrap']);
     </script>
 </body>
 </html>

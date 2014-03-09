@@ -12,7 +12,8 @@ define(function(require) {
      * This is a long-form description of the home module.  Here, things such as the available controllers, directives,
      * routes, services, filters and so forth should be documented.  Generally speaking, these kinds of modules should
      * only include controllers, templates and routes.  Specialized directives are also okay, although it's usually
-     * better to write directives that are reusable, rather than highly specialized ones.
+     * better to write directives that are reusable, rather than highly specialized ones.  Those reusable directives
+     * belong as root level modules in the 'app/modules' directory, rather than under the main module.
      *
      * Services are also okay, but exposing them to other modules can be tricky, especially if it requires two modules
      * to depend on each other.  Since services are typically meant to share state between components (they are
@@ -21,17 +22,16 @@ define(function(require) {
      * developers take care and understand the consequences that the coupling can create.
      *
      * @name app.home
+     * @requires 'angular-route'
      */
     var homeModule = ng.module('app.home', [
         'ngRoute'
     ]);
 
     /**
-     * @requires HomeController
+     * @requires HomeControllerTemplate.html
      */
     var homeControllerTemplate = require('text!./HomeControllerTemplate.html');
-    require('./HomeController')(homeModule);
-
 
     /**
      * Home module configuration
