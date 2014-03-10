@@ -17,7 +17,7 @@ npm-debug.log
 *.sublime-project
 
 #compiled assets
-/build-reports
+/reports
 /www/assets/css
 /www/assets/js
 

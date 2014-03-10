@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                 jshint: grunt.file.readJSON('.jshintrc')
             },
             files: {
-                '../build-reports/plato': ['app/**/*.js']
+                '../reports/plato': ['app/**/*.js']
             }
         }
     };

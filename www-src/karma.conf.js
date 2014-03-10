@@ -30,7 +30,7 @@ module.exports = function(config) {
 
         coverageReporter: {
             type : 'html',
-            dir : '../build-reports/code-coverage/'
+            dir : '../reports/code-coverage/'
         },
 
         // list of files to exclude
