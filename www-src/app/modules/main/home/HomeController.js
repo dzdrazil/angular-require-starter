@@ -12,17 +12,30 @@ define(function(require) {
      *
      * At this point, it doesn't do very much- it only logs out 'application is running!' through the cross-browser
      * safe $log services.
+     *
+     * @class HomeController
      */
-
     homeModule.controller(
         'HomeController',
         /**
+         * Home Controller Constructor
+         *
          * @constructor
-         * @param {$log} Angular's wrapper for window.console.log
+         * @param {Angular.$log} $log Angular's wrapper for window.console.log
+         * @param {Angular.$scope} $scope Child scope instantiated for the constructor
          */
-        function($log) {
-console.log('home controller loaded');
+        function($scope, $log) {
             $log.info('application is running!');
+
+            /**
+             * someMethod
+             * @param  {Object} a test description
+             * @param  {Array<String>} b test
+             * @return {Date}
+             */
+            $scope.someMethod = function(a, b) {
+                $log('test', a, b);
+            };
         }
     );
 
