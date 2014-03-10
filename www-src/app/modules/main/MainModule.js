@@ -23,7 +23,7 @@
  * and add it to the module definition:
  *
  * ```javascript
- * ng.module('namespace', [
+ * angular.module('namespace', [
  *     // insert the string name defined by the child module required above
  *     'childModule'
  * ]);
@@ -50,14 +50,14 @@
 define(function(require) {
     'use strict';
 
-    var ng = require('angular');
+    var angular = require('angular');
 
     /**
      * @requires HomeModule
      */
     require('./home/index');
 
-    ng.module('app', [
+    angular.module('app', [
         'app.home'
     ]);
 });

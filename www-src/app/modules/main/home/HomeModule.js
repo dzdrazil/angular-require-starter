@@ -1,7 +1,7 @@
 define(function(require) {
     'use strict';
 
-    var ng = require('angular');
+    var angular = require('angular');
     require('angular-route');
 
     /**
@@ -24,7 +24,7 @@ define(function(require) {
      * @name app.home
      * @requires 'angular-route'
      */
-    var homeModule = ng.module('app.home', [
+    var homeModule = angular.module('app.home', [
         'ngRoute'
     ]);
 
