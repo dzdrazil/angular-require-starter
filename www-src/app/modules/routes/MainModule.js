@@ -36,7 +36,7 @@ define(function(require) {
      */
     require('./home/index');
 
-    angular.module('app', [
-        'app.home'
+    angular.module('routes', [
+        'routes.home'
     ]);
 });

@@ -24,7 +24,7 @@ define(function(require) {
      * @name app.home
      * @requires 'angular-route'
      */
-    var homeModule = angular.module('app.home', [
+    var homeModule = angular.module('routes.home', [
         'ngRoute'
     ]);
 

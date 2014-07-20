@@ -8,5 +8,19 @@ require([
 ], function (ng) {
     'use strict';
 
+    var ApplicationModule = angular.module('app', [
+        'routes'
+    ]);
+
+    // Application-wide configuration, including route handling, modifying $http's behavior, etc
+    // can go here
+    // ApplicationModule.config(function() {
+    // });
+
+    // Application run behavior
+    // See the angular doc's module section
+    // ApplicationModule.run(function() {
+    // });
+
     ng.bootstrap(document, ['app']);
 });
