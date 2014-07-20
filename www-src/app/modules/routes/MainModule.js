@@ -1,35 +1,14 @@
 /**
- * Main Module
+ * Routes Main Module
  *
  * ### Application root
  *
- * The MainModule is the primary namespace for the core application module.
+ * The MainModule is the primary namespace for the core application routes.
  *
  * Each module that responds to the URL hash change belongs as a child module of Main.  The goal of this structure
  * is to define how the primary application 'sections' or templates respond to the URL hash changes and routing
  * structure.  MainModule, therefore, should remain relatively simple, as it need only require and register its
  * child modules, as well as any sibling modules (which are primarily directives and global services).
- *
- * Each module should have an index.js file, which requires (but does not need to utilize or assign) all of the files
- * within the module folder except for the *Module file itself- all other files will need to require it.  This way,
- * it will be possible for two modules to depend on each other without introducing circular dependencies into
- * require.js
- *
- * To require a module, simply:
- *
- * ```javascript
- * require('childModuleFolder/index');
- * ```
- * and add it to the module definition:
- *
- * ```javascript
- * angular.module('namespace', [
- *     // insert the string name defined by the child module required above
- *     'childModule'
- * ]);
- * ```
- *
- * and every file that registers itself with Angular will be available via Angular's dependency injection.
  *
  * ### Configuration
  *

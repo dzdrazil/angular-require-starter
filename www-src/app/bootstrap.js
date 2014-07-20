@@ -4,7 +4,7 @@
  */
 require([
     'angular',
-    'modules/main/index'
+    'modules/routes/index'
 ], function (ng) {
     'use strict';
 
